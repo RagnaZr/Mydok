@@ -42,7 +42,7 @@ router.get('/',Auth ,function(req, res){
 
 
 router.get('/register', function(req,res) {
-  res.sendFile(path.join(__dirname, '../view/html', 'index.html'));
+  res.sendFile(path.join(__dirname, '../', 'index.html'));
 });
 router.post('/register', function(req, res){
     var hashedPassword = bcrypt.hashSync(req.body.password, 8);
