@@ -26,7 +26,7 @@ router.get('/homepage', checkAuth, function(req, res) {
 
 
 router.get('/login', function(req, res) {
-  res.sendFile(path.join(__dirname, './view/html', 'signin.html'));
+  res.sendFile(path.join(__dirname, '../view/html', 'signin.html'));
 });
 var Auth = function(req, res, next) {
   if (req.session && req.session.isLoggin === true) {
